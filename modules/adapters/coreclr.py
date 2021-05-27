@@ -20,8 +20,8 @@ class CoreCLR(adapter.AdapterConfiguration):
 		return adapter.StdioTransport(log, command)
 
 	async def install(self, log: core.Logger):
-        if not (shutil.which('netcoredbg')):
-            log.error('This adapter requires netcoredbg. Please install it and/or add it to your PATH variable.')
+		if not (shutil.which('netcoredbg')):
+			log.error('This adapter requires netcoredbg. Please install it and/or add it to your PATH variable.')
 
 	async def installed_status(self, log: core.Logger):
 		return None
