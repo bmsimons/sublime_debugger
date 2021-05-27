@@ -15,7 +15,8 @@ class CoreCLR(adapter.AdapterConfiguration):
 	async def start(self, log: core.Logger, configuration: dap.ConfigurationExpanded):
 		command = [
 			"netcoredbg",
-			"--interpreter=vscode"
+			"--interpreter=vscode",
+            "--log=netcoredbg.log"
 		]
 		return adapter.StdioTransport(log, command)
 
