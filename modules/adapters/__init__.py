@@ -7,6 +7,7 @@ from .go import Go
 from .php import PHP
 from .python import Python
 from .ruby import Ruby
+from .coreclr import CoreCLR
 
 from .node import Node
 from .chrome import Chrome
